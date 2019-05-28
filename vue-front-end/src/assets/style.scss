@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons");
+@import "~normalize.css/normalize.css";
+
+body {
+  background: var(--theme-background);
+  color: var(--theme-color);
+  transition: color 200ms;
+  transition: background 200ms;
+  font-family: "Roboto", "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+.d-inline {
+  display: inline;
+}
+
+// fade transition
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 200ms ease;
+}
+.fade-enter-to,
+.fade-leave {
+  opacity: 1;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+//slide
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.2s, opacity 0.2s;
+}
+.slide-enter-to,
+.slide-leave {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.slide-enter,
+.slide-leave-to {
+  transform: translate(100%, 0);
+  opacity: 0;
+}
